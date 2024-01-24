@@ -1,6 +1,7 @@
 .header {
   background-color: rgb(236, 235, 236);
   &__contacts {
+    display: none;
     position: relative;
     font-size: 16px;
     text-decoration: none;
@@ -20,6 +21,9 @@
       line-height: normal;
       letter-spacing: 0.28px;
     }
+    @media (min-width: 768px) {
+     display: flex;
+    }
   }
   &__link {
     &--active {
@@ -31,7 +35,7 @@
         height: 2px;
         bottom: -27px;
         border-radius: 2px;
-        background: #2196f3;
+        background: $active-color;
       }
     }
   }
@@ -55,28 +59,44 @@
     gap: 50px;
   }
   &__logow {
-    color: rgb(33, 150, 243);
-    font-size: 26px;
+    color: #2196f3;
     font-family: Raleway;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+    @media (min-width: 1200) {
+     font-size: 26px;
+     letter-spacing: 0.78px;
+    }
   }
   &__logos {
-    color: rgb(33, 33, 33);
-    font-size: 26px;
+    color: #212121;
     font-family: Raleway;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+    @media (min-width: 1200) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+    }
   }
   &__dive {
-    display: flex;
-    gap: 50px;
+    display: none;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 10px;
+     }
+     @media (min-width: 1200px) {
+      gap: 50px;
+     }
   }
   &__numbmail {
+    display: none;
     text-decoration: none;
     color: rgb(117, 117, 117);
     font-size: 14px;
@@ -91,6 +111,23 @@
       font-weight: 500;
       line-height: normal;
       letter-spacing: 0.28px;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+     }
+  }
+  &__nav {
+    display: none;
+    @media (min-width: 768px) {
+   display: block;
+    }
+  }
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    @media (min-width:768px) {
+      display: none;
     }
   }
 }
