@@ -1,0 +1,55 @@
+.footer {
+    background-color: rgb(47, 48, 58);
+    &__logow {
+      color: rgb(33, 150, 243);
+      font-size: 26px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.78px;
+    }
+    &__logos {
+      color: rgb(255, 255, 255);
+      font-size: 26px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.78px;
+    }
+    &__address {
+      color: white;
+      font-size: 14px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+      text-decoration: none;
+    }
+    &__contacts {
+      text-decoration: none;
+      color: rgb(117, 117, 117);
+      font-size: 14px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.42px;
+      &:hover {
+        color: rgb(33, 150, 243);
+        font-size: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+      }
+    }
+    &__address-class {
+      display: flex;
+      flex-direction: column;
+        
+    }
+  }

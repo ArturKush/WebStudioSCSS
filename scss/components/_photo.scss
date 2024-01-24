@@ -1,0 +1,42 @@
+.photo {
+    &__list {
+      overflow: hidden;
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      margin-bottom: 94px;
+      padding: 0;
+    }
+    &__meaning {
+      margin-top: 0;
+      color: rgb(33, 33, 33);
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.08px;
+    }
+    &__item {
+      position: relative;
+    }
+    &__descr {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      width: 370px;
+      height: 70px;
+      background: rgba(47, 48, 58, 0.8);
+      display: block;
+      padding: 27px 0;
+      position: absolute;
+      bottom: 5px;
+    }
+  }

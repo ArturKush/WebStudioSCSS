@@ -1,0 +1,23 @@
+//base
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/normalize";
+@import "./base/general";
+
+//utils
+@import "./utils/colors";
+@import "./utils/mix";
+@import "./utils/placeholder";
+
+//components
+@import "./components/main";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/card";
+@import "./components/clients";
+@import "./components/features";
+@import "./components/hub_btn";
+@import "./components/lead";
+@import "./components/photo";
+
+
