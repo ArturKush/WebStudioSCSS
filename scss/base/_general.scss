@@ -3,17 +3,18 @@
   max-width: 100%;
   // width: 1170px;
   margin: 0 auto;
-  @media (min-width:768px ) {
-max-width: 738px;
+  @media (min-width: 768px) {
+    max-width: 738px;
+    padding: 0;
   }
-  @media (min-width:1200px ) {
+  @media (min-width: 1200px) {
     max-width: 1170px;
   }
 }
 body {
   font-family: Roboto;
-  @media(min-width: 320px) {
-    overflow-x:hidden;
+  @media (min-width: 320px) {
+    overflow-x: hidden;
   }
 }
 li {
