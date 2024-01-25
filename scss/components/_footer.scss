@@ -4,21 +4,21 @@
   padding-bottom: 60px;
   &__logow {
     color: rgb(33, 150, 243);
-    font-size: 26px;
+    font-size: 24px;
     font-family: Raleway;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: .72px;
+    margin-bottom: 20px;
+    margin-top: 0;
   }
   &__logos {
-    color: rgb(255, 255, 255);
-    font-size: 26px;
+    font-size: 24px;
     font-family: Raleway;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.78px;
+    font-weight: 700;
+    letter-spacing: .72px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #fff;
   }
   &__address {
     color: white;
@@ -29,6 +29,12 @@
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration: none;
+  }
+  &__address-class {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
   }
   &__contacts {
     text-decoration: none;
@@ -64,8 +70,13 @@
     font-size: 20px;
     color: #fff;
   }
+  &__dive-two {
+    margin-top: 60px
+  }
   &__title-one {
     color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -83,6 +94,7 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    text-align: center;
   }
   &__btn {
     width: 200px;
@@ -117,12 +129,24 @@
   }
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+      align-items: flex-start;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
   &__list {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
     padding: 0;
+    margin: 0;
   }
   &__https {
     background-color: rgba(255,255,255,0.1);
@@ -134,5 +158,37 @@
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+  &__dive-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__dive-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+    @media (min-width: 1200px) {
+      margin-left: 70px;
+      margin-top: 0;
+    }
+  }
+  &__dive-three {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    @media (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 93px;
+    }
+  }
+  &__dive-three-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }

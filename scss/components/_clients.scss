@@ -17,6 +17,7 @@
     }
   }
   &__list {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     padding: 0;
